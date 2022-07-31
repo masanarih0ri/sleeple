@@ -1,6 +1,6 @@
 Metrics/BlockLength:
   Exclude:
-    - test/**/*
+    - spec/**/*
 
 Metrics/ClassLength:
   Exclude:

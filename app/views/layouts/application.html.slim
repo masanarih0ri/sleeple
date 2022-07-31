@@ -10,4 +10,11 @@ html lang="ja"
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   
   body
+    - if current_user.present?
+      p = current_user.name
+      = link_to 'logout', destroy_user_session_path, method: :delete
+    - if notice
+      p = notice
+    - if alert
+      p = alert
     = yield

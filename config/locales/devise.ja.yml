@@ -1,0 +1,21 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: メールアドレスが入力されていません
+            password:
+              blank: パスワードが入力されていません
+            name:
+              blank: 名前が入力されていません
+  devise:
+    shared:
+      minimum_password_length: "（%{count}文字以上）"
+    registrations:
+      edit:
+        title: ユーザー編集
